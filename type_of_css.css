@@ -1,0 +1,13 @@
+img{
+    border-radius: 50% ;
+    border: 2px color blue;
+
+    display: block;
+    margin :auto;
+    height: 300px; 
+    width: 350px; 
+}
+
+h1{
+    color:brown;
+}

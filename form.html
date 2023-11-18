@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1>Welcome to HTML Forms</h1>
+<fieldset>
+    <legend>USER FORM</legend>
+    <form action = "./list.html" method = "Get" target ="_blank">
+        <label for ="username">Enter Username:</label><br>
+        <input type = "text" id = "username" size = "29"
+        value = "John123"
+        placeholder = "e.g. john123" minlength = "5" maxlength = "15" required
+        name = "username" >
+
+
+        <br>
+        <label for = "password">Password:</label><br>
+        <input type = "password" id = "password" name = "password">
+        
+        <br><br>
+        <!-- Additional Attribute -->
+        <label>
+        <input type = "number" max ="30" min = 18 placeholder = "e.g 12323324" >
+        <br><br>
+        <label>Phone number</label>
+        <input type="tel" placeholder ="e.g 9999999999" >
+        <br><br>
+        <label>Email</label>
+        <input type = "email" placeholder = "e.g john@example.com">
+        <br><br>
+        <input type ="file">
+        <br><br>
+        
+        <!-- Radio Button(Only for one option) -->
+        <label>Select Gender</label><br>
+        <input type = "radio" name= "gender">Male
+        <input type = "radio" name = "gender">Female
+        <input type = "radio" name = "gender">Others
+        <br><br>
+
+        <!-- Checkbox(Used to select multiple option) -->
+        <label >Preferred Location</label><br>
+
+        <input type = "checkbox" name = "check">Bangalore 
+        <input type = "checkbox" name = "check">Pune
+        <input type = "checkbox" name = "check">Hyderabad
+        <input type = "checkbox" name = "check">Chennai
+
+        <br><br>
+
+
+        <!-- Select tag to create dropdown -->
+        <label>College Name:</label>
+        <select name = "College Name">
+        <option label ="SELECT"></option>
+        <option value ="KNS Institute oF Technology">KNS Institute oF Technology</option>
+        <option value = "Secab Institute Of Technology">Secab Institute Of Technology</option>
+        <option value = "HKBK">HKBK</option>
+        <option value ="Reva University">Reva University</option>    
+        </select>
+        <br><br>
+         <label>Favorite food</label>
+         <select name = "Food"  >
+            <option label ="SELECT"></option>
+             <optgroup label ="NON VEG">
+                <option value ="Kabab">Kabab</option>
+                <option value = "Chicken Briyani">Chicken Briyani</option>
+                <option value = "Khurma">Khurma</option>
+                <option value ="Chicken Tikka">Chicken Tikka</option>    
+        
+             </optgroup>
+             <optgroup label = "Veg">
+                <option value ="Monchurian">Monchurian</option>
+                <option value = "Shahi paneer">Shahi paneer</option>
+                <option value = "Soyabean">Soyabean</option>
+                <option value ="Chilli Paneer">Chilli Paneer</option>    
+        
+             </optgroup>
+
+         </select>   
+        <br><br>
+         <label >Date</label>
+         <input type ="date" name = "" id = "">
+         <br><br>
+         <label>Date Time</label>
+         <input type = "datetime" >
+         <br><br>
+         <input type = "month" >
+         <br><br>
+         <label>Range</label>
+         <input type = "range" min="100" max = 100000  >
+         <br><br>
+         <label>Search</label>
+         <input type = "search" placeholder ="Type here to search">
+         <br><br>
+         <label>Time</label>
+         <input type = "time">
+         <br><br>
+         <label>Week</label>
+         <input type = "week">
+         <br><br>
+         <label>Enter URL</label>
+         <input type = "url" >
+        <br><br>
+        <input type ="Submit">
+        <input type = "reset">
+        <!-- <input type = "button" value = "Button"> -->
+        <button type = "submit">Sign in</button>
+    </form>
+
+</fieldset>
+</body>
+</html> 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src = "./operations.js"></script>
+    <script>
+        function access()
+        {
+            if(this.readyState === 'complete')
+            {
+                var div1 = document.getElementById("div1")
+                var div2 = document.getElementById("div2")
+                div1.innerHTML = add(12,6)
+                div1.innerHTML = multiply(12,6)
+                
+            }
+            document.onreadystatechange = access
+        }
+    </script>
+</head>
+<body>
+    <div id = "div1" style =" color: blue; font-size: 20px";></div>
+    <div id = "div2" style =" color: green; font-size: 30px";></div>
+
+
+</body>
+</html>

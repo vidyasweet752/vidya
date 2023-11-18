@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function outerFunction()
+        {
+            var data = 200;
+            function innerFunctions()
+            {
+                document.write("<br>"+"From Inner Function")
+                document.write("data" = +data)
+            }
+            document.write("<br>"+"From Outerr Function")
+            return innerFunctions();
+        }
+        
+        var innerFuncRef =  outerFunction()
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

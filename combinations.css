@@ -1,0 +1,32 @@
+/* p{
+    color: sienna;
+} */
+
+/*! DESCENDENT COMBINATOR- It will select all the direct an indirect members of a main tag\ */
+div p{
+    color:red
+}
+
+/*! General Sibling Combinator = it will select all the outside members of a main tag */
+ div~p{
+     color: blue;
+ }
+ 
+/* !Child combinator- It will select all the direct members of a main tag */
+  /* div>p{
+      color:crimson;
+  } */
+
+  /* !Adjacent Sibling Combinator- It will select only the sudden occurence members of a 
+  !main tag */
+  div+p{
+      color: chartreuse;
+  }
+
+div span p{
+    border: 2px solid darkblue;
+    background-color: darkseagreen;
+}
+div span+h1{
+    color: blue;
+}

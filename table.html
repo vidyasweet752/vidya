@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+    table{
+
+        text-align: center; 
+    }</style>
+</head>
+<body>
+    <table border = "10" cellspacing = 10 cellpadding = 20 rules = "all" >
+    <tr>    
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>USN NO</th>
+        <th>Marks</th>
+    </thead>
+    </tr>
+    <tr>
+        <td>Vidya</td>
+        <td>23</td>
+        <td>1KN17EC049</td>
+        <td>700</td>
+    </tr>
+    <tr>
+        <td>Muskan</td>
+        <td>22</td>
+        <td>1KN17EC010</td>
+        <td>750</td>
+    </tr>
+    <tr>
+        <td>Farha</td>
+        <td>21</td>
+        <td>1KN17EC014</td>
+        <td>900</td>
+    </tr>
+    <tr>
+        <td>Farzeen</td>
+        <td>21</td>
+        <td>1KN17EC015</td>
+        <td>1000</td>
+    </tr>
+    <tr>
+        <td>Bhoomika</td>
+        <td>22</td>
+        <td>1KN17EC008</td>
+        <td>1000</td>
+    </tr>
+    </table>
+    <br>
+
+    <table border = "10" cellspacing = 10 cellpadding = 20 rules = "all" >
+        <tr>
+            <thead>
+                <th>Name </th>
+                <th>Age</th>
+                <th>USN</th>
+                <th>Marks1</th>
+                 <th>Marks2</th>
+            </thead>
+        </tr>
+
+        <tr>
+            <td>Vidya</td>
+            <td>23</td>
+            <td>1KN17EC049</td>
+            <td colspan = "2">700</td>
+            
+        </tr>
+        <tr>
+            <td>Muskan</td>
+            <td>22</td>
+            <td>1KN17EC010</td>
+            <td>750</td>
+            <td>740</td>
+        </tr>
+        <tr>
+            <td>Farha</td>
+            <td rowspan = "2">21</td>
+            <td>1KN17EC014</td>
+            <td>900</td>
+            <td>720</td>
+        </tr>
+        <tr>
+            <td>Farzeen</td>
+            <td>1KN17EC015</td>
+            <td rowspan = "2">1000</td>
+            <td>790</td>
+        </tr>
+        <tr>
+            <td>Bhoomika</td>
+            <td>22</td>
+            <td >1KN17EC008</td>
+            <td>950</td>
+    </table>
+    <br>
+    <table border = "10" cellspacing = 10 cellpadding = 20>
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td >Row 1 Cell 2</td>
+            
+            <td >Row 1 Cell 3</td>
+        </tr>
+        <tr>
+           <!-- <td>Row 2 Cell 1</td> -->
+            <td>Row 2 Cell 2</td>
+            
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+            <!-- <td>Row 3 Cell 2</td>
+            
+            <td>Row 3 Cell 3</td> -->
+
+        </tr>
+    </table>
+    <br>
+    <table border = "20" cellspacing = 5 cellpadding = 20 rules = "all" >
+        <tr>
+            <th rowspan = "2"></th>
+            <th colspan= "2">Averages</th>
+            <th rowspan = "2">Red Eyes</th>
+        </tr>
+        <tr>
+            <th>height</th>
+            <th>weight</th>
+        </tr>
+
+        <tr>
+            <th>Males</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>10%</td>
+        </tr>
+
+        
+        <tr>
+            <th>Females</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+</body>
+</html>

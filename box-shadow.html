@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+    <style>
+        
+    .square{
+        height :100px;
+        width :400px;
+        background-color:orange;
+        margin: auto;
+        box-shadow: -10px -10px 15px grey;
+    }
+
+    .rectangle{
+        height :100px;
+        width :400px;
+        background-color:green;
+        margin:auto;
+
+        /* box-shadow: x-axis y-axis , blurr ratio , color , increase shadow width; */
+        box-shadow: 10px 10px 15px grey;
+         
+    }
+    .circle{
+        height:100px;
+        width: 100px;
+        background-color:blue;
+        border-radius: 50%;
+        margin: auto;
+        box-shadow: inset 10px 10px 15px grey;
+    }
+    </style>
+</head>
+<body>
+
+    <div class = "square"></div>
+    <div class = "circle"></div>
+    <diV class = "rectangle"></div>
+    <div >
+        <img class = "circle" src="./Assets/DSCN1198.JPG">
+    </div>
+</body>
+</html>
